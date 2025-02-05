@@ -1,0 +1,159 @@
+/* General body and container setup */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1e3c72;
+    flex-direction: column;
+  }
+  
+  /* Loader Styles */
+  .loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Hide the game initially */
+  .hidden {
+    display: none;
+  }
+  
+  /* Game container */
+  #game-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+  }
+  
+  /* Circular color box */
+  #colorBox {
+    width: 150px;
+    height: 150px;
+    margin: 20px auto;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    background-color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  /* Color options as circular buttons */
+  #colorOptions {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: none;
+    margin: 5px;
+    transition: all 0.3s;
+  }
+  
+  button:hover {
+    opacity: 0.8;
+  }
+  
+  button:active {
+    opacity: 1;
+  }
+  
+  /* New game button styles */
+  button#newGameButton {
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  button#newGameButton:hover {
+    background-color: #2980b9;
+  }
+  
+  button#newGameButton:active {
+    background-color: #1d6fa5;
+  }
+
+  /* New game button styles */
+button#newGameButton {
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%; /* Make the button fill the available width */
+    max-width: 250px; /* Set a max-width for the button */
+    display: block; /* Ensure it behaves as a block element for centering */
+    margin: 0 auto; /* Center the button */
+  }
+  
+  /* Button hover and active states */
+  button#newGameButton:hover {
+    background-color: #2980b9;
+  }
+  
+  button#newGameButton:active {
+    background-color: #1d6fa5;
+  }
+  
+
+  
+  /* Game status and score */
+  #gameStatus {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  #score {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 600px) {
+    #colorBox {
+      width: 120px;
+      height: 120px;
+    }
+  
+    button {
+      width: 40px;
+      height: 40px;
+    }
+  
+    #game-container {
+      width: 95%;
+      padding: 10px;
+    }
+  
+    #score {
+      font-size: 18px;
+    }
+  }
+  

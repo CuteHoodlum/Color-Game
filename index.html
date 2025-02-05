@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Guessing Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Loader section -->
+  <div id="loader" class="loader">
+    <p>Welcome Mf!</p>
+  </div>
+
+  <div id="game-container" class="hidden">
+    <div id="gameInstructions" data-testid="gameInstructions">
+      Guess the correct color!
+    </div>
+
+    <div id="colorBox" data-testid="colorBox"></div>
+
+    <div id="colorOptions" data-testid="colorOptions">
+      <!-- Color options will be dynamically inserted here -->
+    </div>
+
+    <div id="gameStatus" data-testid="gameStatus"></div>
+
+    <div id="score" data-testid="score">Score: 0</div>
+
+    <button id="newGameButton" data-testid="newGameButton">New Game</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
